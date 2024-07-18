@@ -1,0 +1,296 @@
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.list li {
+  margin: 0 10px;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.125rem;
+  transition: color 0.3s ease;
+}
+
+.list li a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Hero Section Styles */
+
+.frontbanner img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.frontbanner .container {
+  height: 682px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.frontbanner .caption h1 {
+  font-size: 3rem; /* Equivalent to 48px */
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.frontbanner .caption p {
+  font-size: 1.125rem; /* Equivalent to 18px */
+  max-width: 37.5rem; /* Equivalent to 600px */
+  margin: 0 auto 40px;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .frontbanner .caption h1 {
+    font-size: 2rem; /* Adjusted for smaller screens */
+  }
+
+  .frontbanner .caption p {
+    font-size: 1rem; /* Adjusted for smaller screens */
+    max-width: 100%; /* Full width on smaller screens */
+    padding: 0 20px; /* Add padding for readability */
+  }
+}
+
+/* Search Bar Styles */
+.container2 {
+  margin: 0 50px;
+}
+
+.search {
+  background: #fff;
+  padding: 20px 15px; /* Padding on both sides */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; /* Curved edges */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+  position: relative;
+  z-index: 1;
+}
+
+.search ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px; /* Gap between select boxes */
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+}
+
+.search ul li {
+  margin: 0 10px;
+}
+
+.search label {
+  display: block;
+  font-size: 1rem; /* Equivalent to 16px */
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.search select {
+  padding: 10px;
+  font-size: 0.9rem; /* Equivalent to 16px */
+  color: #e4d4cb;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background-color: #fff; /* White background for select */
+  width: 200px; /* Example width, adjust as needed */
+}
+
+.search li img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Top Destinations Section */
+.container3 {
+  margin: 0 60px;
+}
+
+.destination {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.destination h2 {
+  font-size: 2.25rem; /* Equivalent to 36px */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.destination .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.destination .col {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background: #fff;
+  text-align: left;
+}
+
+.destination .col:hover {
+  transform: translateY(-10px);
+}
+
+.destination img {
+  width: 100%;
+  height: 88%;
+  display: block;
+}
+
+.destination .col h2 {
+  padding: 15px; /* Increased padding for better spacing */
+  margin: 0;
+  font-size: 1.125rem; /* Equivalent to 18px */
+  color: #5e6282;
+}
+
+.destination .caption {
+  padding: 15px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  color: #333;
+  text-align: left;
+}
+
+/* Logos Section Styles */
+.logos {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.logos ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.logos li img {
+  width: 100px; /* Adjust width as needed */
+  height: auto;
+}
+
+/* Testimonial Section Styles */
+.testmonial {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.testmonial h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testmonial p {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Client Review Section Styles */
+.client {
+  margin: 40px 0;
+}
+
+.client {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.client .col {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.client .col:hover {
+  transform: translateY(-10px);
+}
+
+.client img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.client p {
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.client .rating {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.client .rating img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.client .rating h3 {
+  font-size: 1.125rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.client .rating p {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search ul {
+    flex: 1fr; /* Stack items vertically */
+  }
+
+  .search ul li {
+    margin-bottom: 10px; /* Add space between items */
+  }
+
+  .search select {
+    width: 100%;
+  }
+
+  .client {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

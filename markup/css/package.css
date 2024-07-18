@@ -1,0 +1,43 @@
+.faq-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.faq-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.faq-container p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2-column grid */
+  gap: 20px;
+}
+
+.faq form {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.faq select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.faq option {
+  font-size: 1rem;
+}

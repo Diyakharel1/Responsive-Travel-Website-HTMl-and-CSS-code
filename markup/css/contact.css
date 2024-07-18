@@ -1,0 +1,18 @@
+.table-wrap {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th {
+  background-color: #333333;
+  color: white;
+  font: bold;
+}
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
